@@ -14,9 +14,17 @@ How to install and run this web application on your system ?
 
    git clone https://github.com/amol410/DataGrid.git
    
-4. Open VsCode or Any other code editor and run these commands for creating files and executing them into database
+5. If required go to the directory
+   cd datagrid
+   
+6. Open VsCode or Any other code editor and run these commands for creating files and executing them into database
+   (if sqlite database shown in directory following commands not required)
 
    python manage.py makemigrations
 
    python manage.py migrate
+
+8. Runserver using following command
+
+   python manage.py runserver
   
