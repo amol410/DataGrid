@@ -27,4 +27,18 @@ How to install and run this web application on your system ?
 8. Runserver using following command
 
    python manage.py runserver
+
+
+Functionality --
+
+1. Implemented basic CRUD (Create, Read, Update, Delete) operations for blog posts where each blog have Title and Body.
+
+2. Created basic user authentication where users can sign up, log in, and log out (links created will take you to respective pages), it has shown on frontpage itself.
+
+3. Home page has listed with all blog posts in reverse chronological order (descending order), new post will be shown at top.
+
+4. Admin functionality given to superuser so that he/she can Users or Blog Posts  
+
+
+
   
