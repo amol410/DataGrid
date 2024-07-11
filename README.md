@@ -2,7 +2,7 @@
 
 How to install and run this web application on your system ?
 
-1. You need to have Python installed on your machine you can get it installed by following way
+1. You need to have Python installed on your machine, you can get it installed by following way
 
    https://phoenixnap.com/kb/how-to-install-python-3-windows
 
@@ -10,5 +10,9 @@ How to install and run this web application on your system ?
 
    python -m pip install Django
 
-3. 
+3. Open VsCode or Any other code editor and run these commands for creating files and executing them into database
+
+   python manage.py makemigrations
+
+   python manage.py migrate
   
