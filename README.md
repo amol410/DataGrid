@@ -10,7 +10,11 @@ How to install and run this web application on your system ?
 
    python -m pip install Django
 
-3. Open VsCode or Any other code editor and run these commands for creating files and executing them into database
+3. Clone this repository on your machine using this command
+
+   git clone https://github.com/amol410/DataGrid.git
+   
+4. Open VsCode or Any other code editor and run these commands for creating files and executing them into database
 
    python manage.py makemigrations
 
