@@ -8,7 +8,7 @@ How to install and run this web application on your system ?
 
 2. Install Django using command line
 
-  python -m pip install Django
+   python -m pip install Django
 
 3. 
   
