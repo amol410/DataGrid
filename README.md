@@ -1,4 +1,4 @@
-Created Basic Blog App with CRUD functionality along with Signup, Login, Logout for Authentication.
+**Created Basic Blog App with CRUD functionality along with Signup, Login, Logout for Authentication.**
 
 How to install and run this web application on your system ?
 
