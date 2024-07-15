@@ -8,7 +8,7 @@ from .forms import PostForm
 
 def home(request):
     """This is Home Page"""
-    posts = Post.objects.all().order_by('-created_at') # type : ignore
+    posts = Post.objects.all().order_by('-created_at')
     return render(request, 'blog/home.html', {'posts': posts})
 
 def post_detail(request, pk):
@@ -36,7 +36,7 @@ def signup(request):
 def post_new(request):
     """Create a New Post Here, Remember login is necessary """
     if request.method == "POST":
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -51,7 +51,7 @@ def post_edit(request, pk):
     """Editing our Post Functionality"""
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
+        form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user

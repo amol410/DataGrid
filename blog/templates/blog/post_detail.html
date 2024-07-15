@@ -1,9 +1,12 @@
 {% extends 'blog/base.html' %}
-
+{% block title %}post_detail{% endblock title %}
 {% block content %}
     <div class="card mt-4">
         <div class="card-body">
             <h2 class="card-title">{{ post.title }}</h2>
+            {% if post.image %}
+            <img src="{{ post.image.url }}" alt="{{ post.title }}">
+            {% endif %}
             <p class="card-text">{{ post.body }}</p>
             <p class="card-text"><small class="text-muted">By {{ post.author }} on {{ post.created_at }}</small></p>
             {% if user == post.author %}
