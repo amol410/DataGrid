@@ -1,3 +1,4 @@
+"""Registering Model Here"""
 from django.contrib import admin
 from .models import Post
 
@@ -6,4 +7,5 @@ from .models import Post
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'author']
+    """Post Model Registered here for Admin Panel"""
+    list_display = [ 'title', 'author', 'id',]
